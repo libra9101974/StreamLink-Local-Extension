@@ -107,4 +107,12 @@ Users are responsible for ensuring that they have the right to access and stream
 
 ---
 
+## ❤️ Support StreamLink
+
+If you enjoy using StreamLink and want to support its development, you can make a voluntary donation through PayPal.
+
+[![Donate with PayPal](https://img.shields.io/badge/Donate%20with-PayPal-0070BA?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=8FDKK4PYCL3CU)
+
+Every contribution is appreciated. Thank you for supporting the project!
+
 ***StreamLink Local Extension — Click. Play. Enjoy.***
