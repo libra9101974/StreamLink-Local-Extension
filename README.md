@@ -29,6 +29,56 @@ Depending on the playback method, you may need:
 - GStreamer configured in TorrServer when using its GStreamer HLS functionality.
 
 Not every stream or video format is compatible with every playback method. Performance depends on the source, format, backend configuration, and hardware.
+## *Required Software*
+
+*StreamLink Local Extension uses local playback software to handle supported streaming sources. Depending on the playback method, you may need one or both of the following.*
+
+### *TorrServer — Recommended*
+
+*TorrServer provides local torrent streaming. The GStreamer-enabled build adds HLS playback and transcoding support, which can help with MKV, HEVC/H.265 and other formats that do not play smoothly in a browser.*
+
+***Download:** [Official TorrServer releases](https://github.com/YouROK/TorrServer/releases)*
+
+#### *Windows installation and GStreamer setup*
+
+1. *Download the **GStreamer-enabled Windows 64-bit build** named `TorrServer-gst-windows-amd64.exe` from the official releases page, if available. A standard TorrServer executable does not provide the GStreamer endpoints required for this feature.*
+
+2. *Run the executable and open the local TorrServer interface at [http://127.0.0.1:8090](http://127.0.0.1:8090).*
+
+3. *Open **Settings** and enable **PRO mode**.*
+
+4. *Open the **GStreamer** tab. If this tab is missing, check that you downloaded the GStreamer-enabled build.*
+
+5. *Configure the GStreamer options as needed, then click **Save GStreamer Settings**.*
+
+#### *Recommended starting settings*
+
+*These are a starting point based on a working StreamLink setup, not universal requirements:*
+
+- ***GStreamer:** Enabled and available.*
+- ***GStreamer path:** `C:\Program Files\gstreamer\1.0\mingw_x86_64` when using a separately installed MinGW x86_64 runtime. Embedded builds may not need this.*
+- ***HDR to SDR:** Enable for HDR sources when tone mapping is supported and needed.*
+- ***Hardware acceleration / Use GPU:** Enable only if supported by your system; otherwise use software encoding.*
+- ***H.265/HEVC transcoding:** Enable if the source needs conversion for browser playback.*
+- ***x264 ultrafast:** Enable if CPU transcoding is struggling to keep up.*
+- ***Video bitrate:** Start around `30000` kbps for high-quality video; `50000` kbps worked well in our test, but requires more bandwidth and processing capacity.*
+
+***Important:** Higher bitrate does not automatically mean smoother playback. Adjust it to match your hardware and connection. GStreamer runtime requirements vary by build, so follow the official documentation if the runtime or plugins are missing.*
+
+### *Ace Stream — Alternative*
+
+*Ace Stream is an alternative playback engine supported by StreamLink.*
+
+***Download:** [Official Ace Stream Windows installation guide](https://wiki.acestream.media/Install_Windows)*
+
+*Install and start Ace Stream if you want to use its playback features.*
+
+### *Notes*
+
+- *TorrServer and Ace Stream are separate applications; they are not bundled with StreamLink.*
+- *Compatible files may play directly without transcoding. GStreamer HLS is useful when a file needs remuxing or transcoding.*
+- *Playback depends on the media format, backend configuration, hardware and network conditions.*
+- *Download software only from the official project sources linked above.*
 
 ## Installation
 
