@@ -162,7 +162,7 @@ Users are responsible for ensuring that they have the right to access and stream
 
 ---
 
-## ?? Support StreamLink
+##  Support StreamLink
 
 If you enjoy using StreamLink and want to support its development, you can make a voluntary donation through PayPal.
 
