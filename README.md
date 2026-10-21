@@ -168,6 +168,9 @@ If you enjoy using StreamLink and want to support its development, you can make 
 
 [![Donate with PayPal](https://img.shields.io/badge/Donate%20with-PayPal-0070BA?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=8FDKK4PYCL3CU)
 
+
+[![Support Sidoheart](https://img.shields.io/badge/Support%20Sidoheart-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/sidocamara)
+
 Every contribution is appreciated. Thank you for supporting the project!
 
 ***StreamLink Local Extension — Click. Play. Enjoy.***
