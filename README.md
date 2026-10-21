@@ -1,22 +1,27 @@
 # StreamLink-Local-Extension
-A local browser extension for click-and-play video streaming using Ace Stream and TorrServer, with a built-in theater player and HLS support.
+A local browser extension for click-and-play video streaming, including **magnet links and `.torrent` files**, using Ace Stream and TorrServer with a built-in theater player and HLS support.
+
 # StreamLink Local Extension
 
 **Click. Play. Enjoy.**
 
-StreamLink Local Extension is a browser extension designed to make video streaming easier through a built-in theater player, with support for Ace Stream and TorrServer backends.
+StreamLink Local Extension is a local browser extension designed to make video playback easier. It can open supported **magnet links and `.torrent` links/files** through its available playback routes and play compatible streams in the built-in theater player. It supports TorrServer for torrent-based video, Ace Stream for compatible streams, and HLS playback for supported formats.
 
-The project focuses on local playback, convenient video launching, and HLS streaming support.
+The goal is a simple **click-and-play experience**: use the StreamLink playback option or right-click menu on a supported magnet or torrent link, choose the available playback route, and watch in the theater player. TorrServer can stream a torrent by its info hash or magnet link; compatible files can use direct playback, while supported GStreamer HLS workflows can help with formats such as HEVC/H.265 that browsers may not play reliably.
+
+Playback depends on the website exposing a usable link, the local backend being running and configured, and the media format being supported. Some sites obscure torrent links or require additional handling, so not every link is guaranteed to work.
 
 ## Features
 
 - **Built-in theater player** for watching video directly in the browser.
+- **Magnet-link playback** for supported magnet links, including TorrServer streaming routes.
+- **`.torrent` link/file playback** through supported StreamLink playback options; some websites may require additional handling.
+- **TorrServer support** for streaming torrent-based video from a magnet link or torrent info hash.
 - **Ace Stream support** for compatible streaming URLs, including HLS.
-- **TorrServer support** for streaming torrent-based video.
 - **HLS playback** for compatible `.m3u8` streams.
-- **Right-click playback options** for supported links.
+- **Right-click playback options** for supported magnet, torrent, and video links.
 - **Direct playback** for compatible video formats.
-- **GStreamer HLS support** through TorrServer for compatible transcoding workflows.
+- **GStreamer HLS support** through TorrServer for compatible remuxing/transcoding workflows.
 - **Local-first design** using locally running playback services.
 
 ## Requirements
@@ -96,12 +101,12 @@ Keep the extension folder in its chosen location while using the extension.
 
 ## Using StreamLink
 
-1. Open a website containing a supported video, stream, magnet link, or torrent link.
-2. Use the available StreamLink playback option or right-click menu where supported.
-3. Choose the appropriate playback route.
-4. Enjoy the video in the theater player.
+1. Open a website containing a supported video, stream, magnet link, or `.torrent` link.
+2. Use the available StreamLink playback option or right-click a supported magnet/torrent link.
+3. Choose the appropriate playback route. TorrServer must be running for TorrServer playback; Ace Stream must be running for Ace Stream playback.
+4. StreamLink opens the supported source in its built-in theater player.
 
-Some websites may obscure or restrict access to playback links, and certain torrent or stream links may require additional handling.
+**Magnet links and torrent links are supported playback sources**, but success depends on the link format, the website, the backend, and media compatibility. Some sites obscure torrent URLs, and some `.torrent` links may need additional handling. A torrent may also need time to start buffering before video appears.
 
 ## Local Services
 
@@ -157,7 +162,7 @@ Users are responsible for ensuring that they have the right to access and stream
 
 ---
 
-## ❤️ Support StreamLink
+## ?? Support StreamLink
 
 If you enjoy using StreamLink and want to support its development, you can make a voluntary donation through PayPal.
 
@@ -166,3 +171,4 @@ If you enjoy using StreamLink and want to support its development, you can make 
 Every contribution is appreciated. Thank you for supporting the project!
 
 ***StreamLink Local Extension — Click. Play. Enjoy.***
+
