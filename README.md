@@ -37,6 +37,16 @@ Not every stream or video format is compatible with every playback method. Perfo
 ## *Required Software*
 
 *StreamLink Local Extension uses local playback software to handle supported streaming sources. Depending on the playback method, you may need one or both of the following.*
+### *Playback Backends*
+
+*StreamLink supports two local playback backends, selectable from the right-click context menu:*
+
+- ***Ace Stream** — uses the local Python backend (`server.py`) for supported stream playback.*
+- ***TorrServer** — provides torrent and magnet video playback, with GStreamer HLS support for compatible media.*
+
+*Both options run locally on your computer. Choose the backend that best suits your playback needs.*
+
+*See the setup instructions for the requirements and configuration of each backend.*
 
 ### *TorrServer — Recommended*
 
