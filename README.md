@@ -41,12 +41,15 @@ Not every stream or video format is compatible with every playback method. Perfo
 
 *StreamLink supports two local playback backends, selectable from the right-click context menu:*
 
-- ***Ace Stream** — uses the local Python backend (`server.py`) for supported stream playback.*
+- ***Ace Stream** — uses the local Python backend (`server.py`) for supported stream playback. To use this backend, place `server.py` inside `C:\StreamLinkLocal\`.*
 - ***TorrServer** — provides torrent and magnet video playback, with GStreamer HLS support for compatible media.*
 
 *Both options run locally on your computer. Choose the backend that best suits your playback needs.*
 
-*See the setup instructions for the requirements and configuration of each backend.*
+***Important:** Keep `server.py` in `C:\StreamLinkLocal\` for the Ace Stream backend to work. TorrServer has its own setup requirements.*
+
+*See the setup instructions for the dependencies and configuration of each backend.*
+
 
 ### *TorrServer — Recommended*
 
