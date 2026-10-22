@@ -120,6 +120,10 @@ Keep the extension folder in its chosen location while using the extension.
 4. StreamLink opens the supported source in its built-in theater player.
 
 **Magnet links and torrent links are supported playback sources**, but success depends on the link format, the website, the backend, and media compatibility. Some sites obscure torrent URLs, and some `.torrent` links may need additional handling. A torrent may also need time to start buffering before video appears.
+***One playback session at a time:** For the best experience, stop or close the current playback before starting another stream or torrent.*
+
+***Ace Stream playback URL errors:** If Ace Stream reports that it did not return a playback URL, the selected source may be incompatible or temporarily unavailable. This does not necessarily mean StreamLink or the local backend is broken. Try another supported source or playback route.*
+
 
 ## Local Services
 
