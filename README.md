@@ -1,6 +1,8 @@
 # StreamLink-Local-Extension
 A local browser extension for click-and-play video streaming, including **magnet links and `.torrent` files**, using Ace Stream and TorrServer with a built-in theater player and HLS support.
 
+[![Watch the Video Tutorial](https://img.shields.io/badge/▶-Watch%20the%20Video%20Tutorial-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=otOQMynF8vk)
+
 # StreamLink Local Extension
 
 **Click. Play. Enjoy.**
